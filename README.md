@@ -17,7 +17,7 @@ var search = bing.search('indonesia').then(res => console.log(res))
 ```
 
 # Example Response
-``
+```
 [
   {
     title: 'Indonesia - Wikipedia',
@@ -57,7 +57,7 @@ var search = bing.search('indonesia').then(res => console.log(res))
     link: 'https://www.lenovo.com/id/in'
   }
 ]
-``
+```
 
 Thank You For Using This Api. If Have Bug Just Pull Request/Issue
 
