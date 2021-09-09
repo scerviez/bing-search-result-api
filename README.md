@@ -1,2 +1,2 @@
 # bing-image-search
-API  For Search Image From bing.com
+API  For Search Result From bing.com
