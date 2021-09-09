@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ['bing'],
+  "keywords": [],
   "author": "nekozu",
   "license": "MIT"
 }
