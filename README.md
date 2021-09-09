@@ -51,7 +51,6 @@ bing.search('indonesia').then(res => console.log(res))
     title: 'Sign in - AIM Indonesia | Ministri Of Transportation',
     link: 'https://aimindonesia.dephub.go.id/signin.php'
   },
-  { title: 'Google', link: 'http://www.google.co.id/' },
   {
     title: 'Situs Resmi Lenovo® Indonesia | Laptop, Tablet, Desktop, Pusat …',
     link: 'https://www.lenovo.com/id/in'
