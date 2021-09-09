@@ -11,26 +11,30 @@ const AXIOS_OPTIONS = {
  function search(query) {
   return axios
     .get(
-      `https://www.bing.com/images/search?q=${query}`,
-      AXIOS_OPTIONS
+      `https://www.bing.com/search?q=${query}`
     )
     .then(function ({ data }) {
       let $ = cheerio.load(data)
 
-      const url = []
-      
-     $(".imgpt > a").each((i, el) => {
-        url[i] = $(el).attr("href");
+      const title = []
+      const links = []
+
+      $(".b_algo > h2").each((i, el) => {
+        title[i] = $(el).text();
+      });
+      $(".b_algo > h2 > a").each((i, el) => {
+        links[i] = $(el).attr("href");
       });
 
       const result = [];
-      for (let i = 0; i < url.length; i++) {
+      for (let i = 0; i < links.length; i++) {
         result[i] = {
-          link: 'https://bing.com'+url[i]
+          title: title[i],
+          link: links[i],
         };
       }
-      return(result);
-    });
-}
+      return result
+      })
+    }
 
 module.exports = { search }
