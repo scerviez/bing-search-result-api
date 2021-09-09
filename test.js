@@ -1,4 +1,4 @@
-const im = require('./index.js')
+const bing = require('./index.js')
 
-var search = search('jakarta')
-console.log('search')
+var search = bing.search('jakarta') .then(res => {
+console.log(res)
