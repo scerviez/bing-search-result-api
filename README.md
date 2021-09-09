@@ -13,7 +13,7 @@ npm install bing-search-result-api
 ```
 const bing = require('bing-search-result-api')
 
-var search = bing.search('indonesia').then(res => console.log(res))
+bing.search('indonesia').then(res => console.log(res))
 ```
 
 # Example Response
