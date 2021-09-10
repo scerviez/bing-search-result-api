@@ -11,7 +11,8 @@ const AXIOS_OPTIONS = {
  function search(query) {
   return axios
     .get(
-      `https://www.bing.com/search?q=${query}`
+      `https://www.bing.com/search?q=${query}`,
+      AXIOS_OPTIONS
     )
     .then(function ({ data }) {
       let $ = cheerio.load(data)
